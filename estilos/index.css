@@ -1,0 +1,103 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #272727;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    animation: slide-top 1s linear both;
+}
+
+.nombre {
+    position: sticky;
+    top: 1;
+    z-index: 1;
+    background-color: #272727;
+    padding: 1px;
+}
+
+
+.column {
+    flex: 1;
+    height: 100%;
+    border: 1px solid #272727;
+    overflow: hidden;
+}
+
+
+.slider {
+
+    width: 300%;
+    height: 50%;
+    right: 150%;
+    margin-top: 15%;
+    margin-left: 10%;
+    display: flex;
+    transition: transform 0.5s;
+    overflow: auto;
+}
+
+#right-column {
+    background-color: #272727; /* Color de fondo de la columna derecha */
+}
+
+#left-column {
+    background-color: #272727;
+}
+
+#name{
+    color: #ffffff;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    position: sticky;
+}
+
+.slide-top{animation:slide-top 0.7s linear both}@keyframes slide-top{0%{transform:translateY(50px)}100%{transform:translateY(-20px)}}
+
+.bio{
+    color: #ffffff;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    display: flex;
+    
+}
+
+.slider img {
+    width: 25%;
+    height: 100%;
+}
+
+.link {
+    color: #ffffff; /* Color de texto para los enlaces */
+    text-decoration: none; /* Elimina la decoración predeterminada de los enlaces (subrayado) */
+    margin-right: 20px; /* Espacio entre los enlaces */
+    margin-left: 12%;
+}
+
+.link:hover {
+    text-decoration: none; /* Subraya los enlaces cuando se pasa el cursor sobre ellos */
+}
+
+.links {
+    color: #ffffff; /* Color de texto para el contenedor de enlaces */
+    padding: 10px; /* Espacio interno alrededor de los enlaces */
+    margin-top: 7.5%;
+}
+
+a{
+    color: grey; /* Color inicial */
+    transition: color 0.3s; /* Propiedad a animar y duración de la transición */
+    
+}
+
+a:hover {
+    color: grey; /* Nuevo color cuando el mouse está sobre el enlace */
+}
